@@ -1,0 +1,21 @@
+---
+dependencies: []
+galaxy_info:
+  role_name: sublime_text
+  author: Gripinskiy Sergey
+  description: Installs Sublime Text from the official deb repository.
+  company:
+  license: MIT
+  min_ansible_version: 2.8
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+
+  galaxy_tags:
+    - sublime
+    - sublimetext
+    - sublimetext3

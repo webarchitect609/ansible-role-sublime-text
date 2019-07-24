@@ -1,0 +1,14 @@
+---
+- name: "Ensure HTTPS apt transport installed."
+  apt:
+    name: "apt-transport-https"
+    state: present
+
+- name: "Add repository."
+  template:
+    src: templates/sublime-text.list.j2
+    dest: /etc/apt/sources.list.d/sublime-text.list
+
+- name: "Add repo key."
+  apt_key:
+    url: "{{ sublime_gpg_key_url }}"

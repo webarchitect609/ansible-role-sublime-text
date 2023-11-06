@@ -1,9 +1,14 @@
 Ansible Role: Sublime Text
-=========
+==========================
 
-[![Build Status](https://travis-ci.org/webarchitect609/ansible-role-sublime-text.svg?branch=master)](https://travis-ci.org/webarchitect609/ansible-role-sublime-text)
 
-Installs Sublime Text from the official deb repository.
+[![Build Status](https://github.com/webarchitect609/ansible-role-sublime-text/actions/workflows/build.yml/badge.svg)](https://github.com/webarchitect609/ansible-role-sublime-text/actions/workflows/build.yml)
+[![Latest version](https://img.shields.io/github/v/tag/webarchitect609/ansible-role-sublime-text?sort=semver)](https://github.com/webarchitect609/ansible-role-sublime-text/releases)
+[![Downloads](https://img.shields.io/ansible/role/d/30622)](https://galaxy.ansible.com/ui/standalone/roles/webarchitect609/sublime_text)
+[![License](https://img.shields.io/github/license/webarchitect609/ansible-role-sublime-text)](LICENSE.md)
+[![More stuff from me](https://img.shields.io/badge/galaxy-webarchitect609-000)](https://galaxy.ansible.com/ui/standalone/namespaces/7493/)
+
+Installs [Sublime Text](https://www.sublimetext.com/) from the official repository.
 
 Requirements
 ------------
@@ -13,21 +18,7 @@ None.
 Role Variables
 --------------
 
-None of the variables need to be altered for installing the latest stable version of the application. 
-However, all available variables are listed below, along with default values (see `defaults/main.yml`):
-
-    sublime_package: sublime-text
-    
-Package name to install
-    
-    sublime_deb_source: "deb https://download.sublimetext.com/ apt/stable/"
-    
-Repository url.
-    
-    sublime_gpg_key_url: "https://download.sublimetext.com/sublimehq-pub.gpg"
-
-GPG key url.
-
+See [defaults/main.yml](defaults/main.yml)
 
 Dependencies
 ------------
@@ -37,16 +28,13 @@ None.
 Example Playbook
 ----------------
 
-    - hosts: servers
-      roles:
-         - { role: webarchitect609.sublime_text }
+```yaml
+- hosts: servers
+  roles:
+    - { role: webarchitect609.sublime_text }
+```
 
-License
--------
+License & Author Information
+----------------------------
 
-MIT
-
-Author Information
-------------------
-
-This role was created in 2019 by Gripinskiy Sergey.
+[BSD-3-Clause](LICENSE.md)
